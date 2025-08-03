@@ -9,7 +9,7 @@ import type {
   User,
 } from "@/lib/types";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/api";
 
 class ApiError extends Error {
   constructor(public status: number, message: string) {
